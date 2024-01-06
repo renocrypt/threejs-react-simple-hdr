@@ -11,6 +11,7 @@ import { useControls } from "leva";
 import { ReactNode, useRef } from "react";
 import { Group } from "three";
 import "./App.css";
+import HDRFILE from "./assets/modernbuildings/hdr.hdr";
 
 function Rotator({ children }: { children: ReactNode }) {
   const groupRef = useRef<Group>(null!);
@@ -41,7 +42,7 @@ function ReflectiveSphere() {
 }
 
 function ThreeScene() {
-  const envMap = useEnvironment({ files: "./assets/modernbuildings/hdr.hdr" });
+  const envMap = useEnvironment({ files: HDRFILE });
 
   return (
     <>
