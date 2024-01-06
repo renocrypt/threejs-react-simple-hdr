@@ -41,7 +41,7 @@ function ReflectiveSphere() {
 }
 
 function ThreeScene() {
-  const envMap = useEnvironment({ files: "/modernbuildings/hdr.hdr" });
+  const envMap = useEnvironment({ files: "./assets/modernbuildings/hdr.hdr" });
 
   return (
     <>
